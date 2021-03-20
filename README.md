@@ -67,6 +67,11 @@ GRANT ALL ON <b>example_database</b>.* TO '<b>example_user</b>'@'%'; <br/>
 exit <br/>
 SHOW DATABASES; <br/>
 
+### Добавление public ssh key на сервер через Git Bash Windows 10
+cat ~/.ssh/id_rsa.pub | ssh <b>user@123.45.67.89</b> "cat >> ~/.ssh/authorized_keys"
 
+
+### Настройка SSL
+sudo apt install certbot python3-certbot-nginx
 
 
