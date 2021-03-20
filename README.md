@@ -20,3 +20,6 @@ exit
 
 ### Установка PHP
 sudo apt install php-fpm php-mysql
+
+### Настройка Nginx для использования процессора PHP
+sudo mkdir /var/www/your_domain <!-- создаем веб-директорию для домена "your_domain" -->
