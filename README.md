@@ -77,4 +77,4 @@ sudo ufw status </br>
 sudo ufw allow 'Nginx Full' <br/>
 * При назначении "Nginx Full" так же добавится доступ по SSH, так что следующей командой при включении ufw мы не ограничим доступ по SSH
 sudo ufw enable
-
+sudo certbot --nginx -d example.com -d www.example.com
