@@ -56,4 +56,14 @@ nano /var/www/your_domain/index.php <br/>
 <?php
 phpinfo();
 ```
+### Настройка MySQL
+sudo mysql <br/>
+CREATE DATABASE example_database; <br/>
+CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password'; <br/>
+GRANT ALL ON example_database.* TO 'example_user'@'%'; <br/>
+exit <br/>
+SHOW DATABASES; <br/>
+
+
+
 
