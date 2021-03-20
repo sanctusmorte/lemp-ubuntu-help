@@ -49,7 +49,7 @@ server {
 }
 ```
 
-* Вместо "your_domain" указываем название нашего домена (например - "<span style="color:red;">"example.com"</span>, <b>без "https://" или "http://"</b>) или IP адрес нашего сервера (например - 45.61.48.152)
+* Вместо "your_domain" указываем название нашего домена (например - <span style="color:red;">example.com</span>, <b>без "https://" или "http://"</b>) или IP адрес нашего сервера (например - 45.61.48.152)
 
 sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/ <br/>
 sudo nginx -t <br/>
