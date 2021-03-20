@@ -15,7 +15,7 @@ curl -4 icanhazip.com
 ### Установка MySQL
 sudo apt install mysql-server <br/>
 sudo mysql_secure_installation <br/>
-sudo mysql
+sudo mysql <br/>
 exit
 
 ### Установка PHP
