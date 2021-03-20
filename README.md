@@ -48,3 +48,4 @@ server {
 
 }
 ```
+sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
