@@ -48,6 +48,9 @@ server {
 
 }
 ```
+
+* Start a line with a star
+
 sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/ <br/>
 sudo nginx -t <br/>
 sudo systemctl reload nginx <br/>
