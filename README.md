@@ -48,4 +48,12 @@ server {
 
 }
 ```
-sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/ <br/>
+sudo nginx -t <br/>
+sudo systemctl reload nginx <br/>
+nano /var/www/your_domain/index.php <br/>
+```
+<?php
+phpinfo();
+```
+
