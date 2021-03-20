@@ -8,3 +8,6 @@ sudo apt install nginx
 sudo ufw app list <br/>
 sudo ufw allow 'Nginx HTTP' <br/>
 sudo ufw status
+
+### Узнать IP сервера VPS
+curl -4 icanhazip.com
