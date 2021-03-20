@@ -22,4 +22,5 @@ exit
 sudo apt install php-fpm php-mysql
 
 ### Настройка Nginx для использования процессора PHP
-sudo mkdir /var/www/your_domain <!-- создаем веб-директорию для домена "your_domain" -->
+sudo mkdir /var/www/<b>your_domain</b> <br/>
+sudo chown -R $USER:$USER /var/www/your_domain
