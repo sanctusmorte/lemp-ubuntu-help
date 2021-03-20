@@ -23,4 +23,28 @@ sudo apt install php-fpm php-mysql
 
 ### Настройка Nginx для использования процессора PHP
 sudo mkdir /var/www/<b>your_domain</b> <br/>
-sudo chown -R $USER:$USER /var/www/your_domain
+sudo chown -R $USER:$USER /var/www/<b>your_domain</b> <br/>
+sudo nano /etc/nginx/sites-available/<b>your_domain</b> <br/>
+```
+server {
+    listen 80;
+    server_name your_domain www.your_domain;
+    root /var/www/your_domain;
+
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+     }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}
+```
