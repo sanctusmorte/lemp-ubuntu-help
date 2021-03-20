@@ -29,7 +29,7 @@ sudo nano /etc/nginx/sites-available/<b>your_domain</b> <br/>
 server {
     listen 80;
     server_name your_domain www.your_domain;
-    root /var/www/<b>your_domain</b>;
+    root /var/www/your_domain;
 
     index index.html index.htm index.php;
 
@@ -58,9 +58,9 @@ phpinfo();
 ```
 ### Настройка MySQL
 sudo mysql <br/>
-CREATE DATABASE example_database; <br/>
-CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password'; <br/>
-GRANT ALL ON example_database.* TO 'example_user'@'%'; <br/>
+CREATE DATABASE <b>example_database</b>; <br/>
+CREATE USER <b>'example_user'</b>@'%' IDENTIFIED WITH mysql_native_password BY <b>'password'</b>; <br/>
+GRANT ALL ON </b>example_database</b>.* TO 'example_user'@'%'; <br/>
 exit <br/>
 SHOW DATABASES; <br/>
 
