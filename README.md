@@ -11,3 +11,12 @@ sudo ufw status
 
 ### Узнать IP сервера VPS
 curl -4 icanhazip.com
+
+### Установка MySQL
+sudo apt install mysql-server <br/>
+sudo mysql_secure_installation <br/>
+sudo mysql
+exit
+
+### Установка PHP
+sudo apt install php-fpm php-mysql
