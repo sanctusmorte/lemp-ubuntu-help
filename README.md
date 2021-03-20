@@ -74,7 +74,7 @@ cat ~/.ssh/id_rsa.pub | ssh <b>user@123.45.67.89</b> "cat >> ~/.ssh/authorized_k
 ### Настройка SSL
 sudo apt install certbot python3-certbot-nginx <br/>
 sudo ufw status </br>
-sudo ufw allow 'Nginx Full' <br/>
-    * При назначении "Nginx Full" так же добавится доступ по SSH, так что следующей командой при включении ufw мы не ограничим доступ по SSH <br/>
+sudo ufw allow 'Nginx Full' <br/> <br/>
+При назначении "Nginx Full" так же добавится доступ по SSH, так что следующей командой при включении ufw мы не ограничим доступ по SSH <br/> <br/>
 sudo ufw enable <br/>
 sudo certbot --nginx -d example.com -d www.example.com
