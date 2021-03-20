@@ -60,7 +60,7 @@ phpinfo();
 sudo mysql <br/>
 CREATE DATABASE <b>example_database</b>; <br/>
 CREATE USER <b>'example_user'</b>@'%' IDENTIFIED WITH mysql_native_password BY <b>'password'</b>; <br/>
-GRANT ALL ON </b>example_database</b>.* TO 'example_user'@'%'; <br/>
+GRANT ALL ON <b>example_database</b>.* TO '<b>example_user</b>'@'%'; <br/>
 exit <br/>
 SHOW DATABASES; <br/>
 
