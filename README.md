@@ -29,7 +29,7 @@ sudo nano /etc/nginx/sites-available/<b>your_domain</b> <br/>
 server {
     listen 80;
     server_name your_domain www.your_domain;
-    root /var/www/your_domain;
+    root /var/www/your_domain/web;
 
     index index.html index.htm index.php;
 
